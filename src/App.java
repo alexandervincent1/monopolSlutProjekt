@@ -48,7 +48,7 @@ public class App {
                 spel2 = true;
                 spel1 = false;
             }
-        }
+        
         while (spel2 == true) {
             System.out.println(
                     "1.Kolla hur mycket pengar du har\n2.Kolla vilka gator du äger\n3.Kolla vilken gata du står på och pris");
@@ -74,6 +74,7 @@ public class App {
                     spel2 = false;
                 }
             }
+        }
         }
     }
 }
