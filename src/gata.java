@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
 public class gata {
-    public static int Price;
+    public int Price;
+    public String Name;
 
     public static void KöpGata() {
         System.out.println("Grattis du köpte " + App.Gator.get(App.Steg));
@@ -10,86 +11,86 @@ public class gata {
 }
 
 class Västerlånggatan extends gata {
-    public static void Västerlånggatan() {
+    public Västerlånggatan() {
         Price = 1200;
-        pengar.bank = pengar.bank- Price;
+        Name = "Västerlånggatan";
     }
 
 }
 
 class Hornsgatan extends gata {
-    public static void Hornsgatan() {
+    public Hornsgatan() {
         Price = 1200;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class SödraStation extends gata {
-    public static void SödraStation() {
+    public  SödraStation() {
         Price = 4000;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Folkkungagatan extends gata {
-    public static void Folkkungagatan() {
+    public  Folkkungagatan() {
         Price = 2000;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Götgatan extends gata {
-    public static void Götgatan() {
+    public  Götgatan() {
         Price = 2000;
-        pengar.bank = pengar.bank- Price;
+      
     }
 }
 
 class Ringvägen extends gata {
-    public static void Ringvägen() {
+    public  Ringvägen() {
         Price = 2400;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class StEriksgatan extends gata {
-    public static void StEriksgatan() {
+    public  StEriksgatan() {
         Price = 2800;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Elverket extends gata {
-    public static void Elverket() {
+    public  Elverket() {
         Price = 3000;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Odengatan extends gata {
-    public static void Odengatan() {
+    public  Odengatan() {
         Price = 2800;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Valhallavägen extends gata {
-    public static void Valhallavägen() {
+    public  Valhallavägen() {
         Price = 3300;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Östrastation extends gata {
-    public static void Östrastation() {
+    public  Östrastation() {
         Price = 4000;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }
 
 class Sturegatan extends gata {
-    public static void Sturegatan() {
+    public  Sturegatan() {
         Price = 3600;
-        pengar.bank = pengar.bank- Price;
+        
     }
 }

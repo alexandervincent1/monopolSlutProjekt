@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class App {
     public static int Steg = 0;
-    public static ArrayList Gator = new ArrayList();
-    public static ArrayList ÄgdaGator = new ArrayList();
+    public static ArrayList<gata> Gator = new ArrayList();
+    public static ArrayList<gata> ÄgdaGator = new ArrayList();
     
     public static void main(String[] args) throws Exception {
         Scanner tangentbord = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class App {
         Valhallavägen gata10 = new Valhallavägen();
         Östrastation gata11 = new Östrastation();
         Sturegatan gata12 = new Sturegatan();
-        Gator.add("gå");
+        // Gator.add("gå");
         Gator.add(gata1);
         Gator.add(gata2);
         Gator.add(gata3);
@@ -45,15 +45,13 @@ public class App {
             System.out.println("Vad vill du göra\n1.Slå tärningarna");
             int RandOne_DiceOne = RandOne.nextInt(5);
             int RandTwo_DiceTwo = RandTwo.nextInt(5);
-            
-            Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
+            // Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
+            Steg = 0;
             val = tangentbord.nextInt();
-            System.out.println(Steg);
             if (val == 1) {
                 System.out.println("Du fick " + RandOne_DiceOne + " och " + RandTwo_DiceTwo);
                 spel2 = true;
                 spel1 = false;
-                
             }
         
         while (spel2 == true) {
@@ -70,8 +68,8 @@ public class App {
             }
             if (val == 3) {
                 GammalSteg = Steg;
-                System.out.println("Du står på " + Gator.get(Steg) + " Som kostar "
-                        + " Vill du köpa den?\n1 för att köpa\n2 för att inte köpa");
+                System.out.println("Du står på " + Gator.get(Steg).Name + " Som kostar "
+                        +Gator.get(Steg).Price + " Vill du köpa den?\n1 för att köpa\n2 för att inte köpa");
                 int GatKöp = tangentbord.nextInt();
                 if (GatKöp == 1) {
                     gata.KöpGata();

@@ -4,3 +4,4 @@ public class pengar {
         System.out.println("Du har "+bank+"kr" );
     }
 }
+
