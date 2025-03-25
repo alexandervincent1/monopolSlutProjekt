@@ -46,12 +46,18 @@ public class App {
             System.out.println("Vad vill du göra\n1.Slå tärningarna");
             int RandOne_DiceOne = RandOne.nextInt(5);
             int RandTwo_DiceTwo = RandTwo.nextInt(5);
-            Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
+            // Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
+            Steg = 1;
             val = tangentbord.nextInt();
             if (val == 1) {
                 System.out.println("Du fick " + RandOne_DiceOne + " och " + RandTwo_DiceTwo);
                 spel2 = true;
                 spel1 = false;
+                if (Steg==0) {
+                    System.out.println("Du har passerat gå och inkasserar 2000kr");
+                    spel2=false;
+                    spel1=true;
+                }
             }
         
         while (spel2 == true) {
@@ -70,6 +76,15 @@ public class App {
                 
             }
             if (val == 3) {
+                if (Gator.get(Steg).Köpt == true) {
+                    System.out.println("Den här gatan är redan köpt du behöver betala "+Gator.get(Steg).Hyra1+" i hyra");
+                    pengar.bank = pengar.bank -gata.Hyra1;
+                    spel1 = true;
+                    spel2 = false;
+                }
+                if (Gator.get(Steg).Köpt==false) {
+                    
+                
                 GammalSteg = Steg;
                 System.out.println("Du står på " + Gator.get(Steg).Name + " Som kostar "
                         +Gator.get(Steg).Price + " Vill du köpa den?\n1 för att köpa\n2 för att inte köpa");
@@ -82,6 +97,7 @@ public class App {
                 spel1 = true;
                     spel2 = false;
             }
+        }
         }
         }
     }

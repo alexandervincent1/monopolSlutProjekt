@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class gata {
     public int Price;
     public String Name;
-
+    public boolean Köpt;
+    public int Hyra1;
     public static void KöpGata() {
         System.out.println("Grattis du köpte " + App.Gator.get(App.Steg));
         App.ÄgdaGator.add(App.Gator.get(App.Steg));
@@ -20,6 +21,8 @@ class Västerlånggatan extends gata {
     public Västerlånggatan() {
         Price = 1200;
         Name = "Västerlånggatan";
+        Köpt = true;
+        Hyra1 = 50;
     }
 
 }
