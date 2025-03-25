@@ -11,6 +11,7 @@ public class App {
         Scanner tangentbord = new Scanner(System.in);
         Random RandOne = new Random();
         Random RandTwo = new Random();
+        Gå gata0 = new Gå();
         Västerlånggatan gata1 = new Västerlånggatan();
         Hornsgatan gata2 = new Hornsgatan();
         SödraStation gata3 = new SödraStation();
@@ -23,7 +24,7 @@ public class App {
         Valhallavägen gata10 = new Valhallavägen();
         Östrastation gata11 = new Östrastation();
         Sturegatan gata12 = new Sturegatan();
-        // Gator.add("gå");
+        Gator.add(gata0);
         Gator.add(gata1);
         Gator.add(gata2);
         Gator.add(gata3);
@@ -45,8 +46,7 @@ public class App {
             System.out.println("Vad vill du göra\n1.Slå tärningarna");
             int RandOne_DiceOne = RandOne.nextInt(5);
             int RandTwo_DiceTwo = RandTwo.nextInt(5);
-            // Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
-            Steg = 0;
+            Steg = RandOne_DiceOne + RandTwo_DiceTwo + GammalSteg;
             val = tangentbord.nextInt();
             if (val == 1) {
                 System.out.println("Du fick " + RandOne_DiceOne + " och " + RandTwo_DiceTwo);
@@ -55,6 +55,9 @@ public class App {
             }
         
         while (spel2 == true) {
+            if (Steg>=13) {
+                Steg = 0;
+            }
             System.out.println(
                     "1.Kolla hur mycket pengar du har\n2.Kolla vilka gator du äger\n3.Kolla vilken gata du står på och pris");
             val = tangentbord.nextInt();
