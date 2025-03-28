@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class gata {
+public class Gata {
     public int Price;
     public String Name;
     public boolean Köpt;
@@ -12,12 +12,12 @@ public class gata {
     }
 }
 
-class Gå extends gata{
+class Gå extends Gata{
     public Gå(){
         pengar.bank=pengar.bank + 2000;
     }
 }
-class Västerlånggatan extends gata {
+class Västerlånggatan extends Gata {
     public Västerlånggatan() {
         Price = 1200;
         Name = "Västerlånggatan";
@@ -27,79 +27,90 @@ class Västerlånggatan extends gata {
 
 }
 
-class Hornsgatan extends gata {
+class Hornsgatan extends Gata {
     public Hornsgatan() {
         Price = 1200;
         Name = "Hornsgatan";
+        Köpt = true;
     }
 }
 
-class SödraStation extends gata {
+class SödraStation extends Gata {
     public  SödraStation() {
         Price = 4000;
         Name = "SödraStation";
+        Köpt = true;
     }
 }
 
-class Folkkungagatan extends gata {
+class Folkkungagatan extends Gata {
     public  Folkkungagatan() {
         Price = 2000;
         Name = "Folkkungagatan";
+        Köpt = true;
     }
 }
 
-class Götgatan extends gata {
+class Götgatan extends Gata {
     public  Götgatan() {
         Price = 2000;
       Name ="Götgatan";
+      Köpt = true;
     }
 }
 
-class Ringvägen extends gata {
+class Ringvägen extends Gata {
     public  Ringvägen() {
         Price = 2400;
         Name = "Ringvägen";
+        Köpt = true;
     }
 }
 
-class StEriksgatan extends gata {
+class StEriksgatan extends Gata {
     public  StEriksgatan() {
         Price = 2800;
         Name = "StEriksgatan";
+        Köpt = true;
     }
 }
 
-class Elverket extends gata {
+class Elverket extends Gata {
     public  Elverket() {
         Price = 3000;
         Name = "Elverket";
+        Köpt = true;
     }
 }
 
-class Odengatan extends gata {
+class Odengatan extends Gata {
     public  Odengatan() {
         Price = 2800;
         Name = "Odengatan";
+        Köpt = true;
     }
 }
 
-class Valhallavägen extends gata {
+class Valhallavägen extends Gata {
     public  Valhallavägen() {
         Price = 3300;
         Name = "Valhallavägen";
+        Köpt = true;
     }
 }
 
-class Östrastation extends gata {
+class Östrastation extends Gata {
     public  Östrastation() {
         Price = 4000;
         Name = "Östrastation";
+        Köpt = true;
     }
 }
 
-class Sturegatan extends gata {
+class Sturegatan extends Gata {
     public  Sturegatan() {
         Price = 3600;
         Name = "Sturegatan";
+        Köpt = true;
     }
 }

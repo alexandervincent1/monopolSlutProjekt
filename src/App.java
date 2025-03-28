@@ -4,39 +4,39 @@ import java.util.ArrayList;
 
 public class App {
     public static int Steg = 0;
-    public static ArrayList<gata> Gator = new ArrayList();
-    public static ArrayList<gata> ÄgdaGator = new ArrayList();
+    public static ArrayList<Gata> Gator = new ArrayList();
+    public static ArrayList<Gata> ÄgdaGator = new ArrayList();
     
     public static void main(String[] args) throws Exception {
         Scanner tangentbord = new Scanner(System.in);
         Random RandOne = new Random();
         Random RandTwo = new Random();
-        Gå gata0 = new Gå();
-        Västerlånggatan gata1 = new Västerlånggatan();
-        Hornsgatan gata2 = new Hornsgatan();
-        SödraStation gata3 = new SödraStation();
-        Folkkungagatan gata4 = new Folkkungagatan();
-        Götgatan gata5 = new Götgatan();
-        Ringvägen gata6 = new Ringvägen();
-        StEriksgatan gata7 = new StEriksgatan();
-        Elverket gata8 = new Elverket();
-        Odengatan gata9 = new Odengatan();
-        Valhallavägen gata10 = new Valhallavägen();
-        Östrastation gata11 = new Östrastation();
-        Sturegatan gata12 = new Sturegatan();
-        Gator.add(gata0);
-        Gator.add(gata1);
-        Gator.add(gata2);
-        Gator.add(gata3);
-        Gator.add(gata4);
-        Gator.add(gata5);
-        Gator.add(gata6);
-        Gator.add(gata7);
-        Gator.add(gata8);
-        Gator.add(gata9);
-        Gator.add(gata10);
-        Gator.add(gata11);
-        Gator.add(gata12);
+        Gå Gata0 = new Gå();
+        Västerlånggatan Gata1 = new Västerlånggatan();
+        Hornsgatan Gata2 = new Hornsgatan();
+        SödraStation Gata3 = new SödraStation();
+        Folkkungagatan Gata4 = new Folkkungagatan();
+        Götgatan Gata5 = new Götgatan();
+        Ringvägen Gata6 = new Ringvägen();
+        StEriksgatan Gata7 = new StEriksgatan();
+        Elverket Gata8 = new Elverket();
+        Odengatan Gata9 = new Odengatan();
+        Valhallavägen Gata10 = new Valhallavägen();
+        Östrastation Gata11 = new Östrastation();
+        Sturegatan Gata12 = new Sturegatan();
+        Gator.add(Gata0);
+        Gator.add(Gata1);
+        Gator.add(Gata2);
+        Gator.add(Gata3);
+        Gator.add(Gata4);
+        Gator.add(Gata5);
+        Gator.add(Gata6);
+        Gator.add(Gata7);
+        Gator.add(Gata8);
+        Gator.add(Gata9);
+        Gator.add(Gata10);
+        Gator.add(Gata11);
+        Gator.add(Gata12);
         boolean spel1 = true;
         boolean spel2 = true;
         int val;
@@ -76,9 +76,9 @@ public class App {
                 
             }
             if (val == 3) {
-                if (Gator.get(Steg).Köpt == true) {
+                if (Gata.Köpt == True) {
                     System.out.println("Den här gatan är redan köpt du behöver betala "+Gator.get(Steg).Hyra1+" i hyra");
-                    pengar.bank = pengar.bank -gata.Hyra1;
+                    // pengar.bank = pengar.bank -gata.Hyra1;
                     spel1 = true;
                     spel2 = false;
                 }
@@ -90,7 +90,7 @@ public class App {
                         +Gator.get(Steg).Price + " Vill du köpa den?\n1 för att köpa\n2 för att inte köpa");
                 int GatKöp = tangentbord.nextInt();
                 if (GatKöp == 1) {
-                    gata.KöpGata();
+                    Gata.KöpGata();
                     
                     
                 }
