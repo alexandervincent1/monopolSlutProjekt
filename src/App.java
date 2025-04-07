@@ -76,12 +76,12 @@ public class App {
                 
             }
             if (val == 3) {
-                if (Gata.Köpt == True) {
+                if (Gata.Köpt == true) {
                     System.out.println("Den här gatan är redan köpt du behöver betala "+Gator.get(Steg).Hyra1+" i hyra");
                     // pengar.bank = pengar.bank -gata.Hyra1;
                     spel1 = true;
                     spel2 = false;
-                }
+                
                 if (Gator.get(Steg).Köpt==false) {
                     
                 
